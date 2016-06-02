@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import es.pue.autobuses.R;
 
@@ -28,9 +29,9 @@ public class ActivityLineas extends AppCompatActivity {
 
     try {
       ctrl.addLínea(númLínea);
-      System.out.println("Línea creada.");
+      Toast.makeText(this, "Línea " + númLínea + " creada", Toast.LENGTH_LONG).show();
     } catch (Exception e) {
-      System.out.println("Ya existe la línea.");
+      Toast.makeText(this, "Error: ya existe la línea " + númLínea, Toast.LENGTH_LONG).show();
     }
   }
 }
