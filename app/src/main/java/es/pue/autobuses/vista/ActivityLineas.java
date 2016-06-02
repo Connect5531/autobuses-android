@@ -30,6 +30,7 @@ public class ActivityLineas extends AppCompatActivity {
     try {
       ctrl.addLínea(númLínea);
       Toast.makeText(this, "Línea " + númLínea + " creada", Toast.LENGTH_LONG).show();
+      tv.setText("");
     } catch (Exception e) {
       Toast.makeText(this, "Error: ya existe la línea " + númLínea, Toast.LENGTH_LONG).show();
     }
