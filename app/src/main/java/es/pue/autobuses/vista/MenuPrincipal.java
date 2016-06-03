@@ -20,4 +20,10 @@ public class MenuPrincipal extends AppCompatActivity {
     Intent intentoAbrirLínea = new Intent(this, ActivityLineas.class);
     startActivity(intentoAbrirLínea);
   }
+
+  public void crearNuevoAutobús(View botón) {
+    // Se ha pulsado el botón de crear una nueva línea
+    Intent intentoCrearAutobús = new Intent(this, ActividadAutobuses.class);
+    startActivity(intentoCrearAutobús);
+  }
 }
