@@ -68,7 +68,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/lineas"
             android:maxWidth="100dp"
-            android:layout_gravity="right"/>
+            android:layout_gravity="right"
+            />
     </LinearLayout>
 
     <Button
@@ -76,7 +77,8 @@
         android:layout_height="wrap_content"
         android:text="Crear Autobús"
         android:id="@+id/boton"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:onClick="crearBus"/>
 
 
 </LinearLayout>

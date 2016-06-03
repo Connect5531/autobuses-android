@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import es.pue.autobuses.R;
+import es.pue.autobuses.controlador.Controlador;
 
 public class MenuPrincipal extends AppCompatActivity {
+
+  static Controlador ctrl = new Controlador();
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

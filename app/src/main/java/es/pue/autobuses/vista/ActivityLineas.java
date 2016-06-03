@@ -11,11 +11,7 @@ import es.pue.autobuses.R;
 
 public class ActivityLineas extends AppCompatActivity {
 
-  private Controlador ctrl;
 
-  public ActivityLineas() {
-    ctrl = new Controlador();
-  }
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +24,7 @@ public class ActivityLineas extends AppCompatActivity {
     int númLínea = Integer.parseInt(tv.getText().toString());
 
     try {
-      ctrl.addLínea(númLínea);
+      MenuPrincipal.ctrl.addLínea(númLínea);
       Toast.makeText(this, "Línea " + númLínea + " creada", Toast.LENGTH_LONG).show();
       tv.setText("");
     } catch (Exception e) {
